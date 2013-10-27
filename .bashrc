@@ -81,10 +81,10 @@ myip ()
     lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | awk '{ print $4 }' | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g' 
 }
 
-#shot - takes a screenshot of your current window
-shot ()
+#screenshot - takes a screenshot of your current window
+screenshot ()
 {
-    import -frame -strip -quality 85 "$HOME/screenshots/screen_$(date +%s).png"
+    import -frame -strip -quality 85 "$HOME/screenshots/screen_$(date +%Y%m%d_%H%M%S).png"
 }
 
 #bu - Back Up a file. Usage "bu filename.txt" 
