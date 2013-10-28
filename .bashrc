@@ -15,6 +15,7 @@ PS1='[\u@\h \W]\$ '
 alias ls='ls --color=auto'
 alias ll='ls -Fl --group-directories-first'
 alias llm='ls -lFtr'
+alias lla='ls -Fla --group-directories-first'
 alias grep='grep --color=auto'
 alias nano='vim'
 
