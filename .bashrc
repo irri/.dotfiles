@@ -3,6 +3,7 @@
 #
 
 shopt -s extglob
+shopt -s dotglob
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
