@@ -4,6 +4,10 @@
 
 shopt -s extglob
 shopt -s dotglob
+# append to the history file, don't overwrite it
+shopt -s histappend
+# fix LINE and COLUMS when resizing window
+shopt -s checkwinsize
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
