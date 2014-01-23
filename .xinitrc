@@ -16,11 +16,14 @@ numlockx &
 # To make urxvt use .Xresources
 xrdb -merge ~/.Xresources
 
+# automount usb etc.
+udiskie &
+
 # Composite manager (used for transparancy in urxvt)
 xcompmgr &
 
 urxvt &
-google-chrome &
+chromium &
 skype &
 spotify &
 transmission-gtk &

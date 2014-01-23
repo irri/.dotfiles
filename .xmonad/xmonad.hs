@@ -111,6 +111,7 @@ layoutHook' = smartBorders $ myLayout
 manageHook' = composeAll
                  [   isFullscreen                    --> doFullFloat
                    , className =? "Google-chrome"    --> doShift "2-web"
+                   , className =? "chromium"         --> doShift "2-web"
                    , className =? "Spotify"          --> doShift "3-media"
                    , className =? "Skype"            --> doShift "4-im"
                    , className =? "Transmission-gtk" --> doShift "5-torrents"
